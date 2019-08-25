@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CV DATA</title>
+        <script src="./script.js" type="text/javascript"></script>
+    </head>
+    <style>
+
+    *{
+        background-color:lavender ;
+        font-family:verdana; 
+    }
+
+    </style>
+    <body>
+        <div style="background-color">
+        <h2 style="text-align:center; color:blueviolet">CV DATA</h2>
+        <hr>
+    </div>
+        <form onsubmit="checkForm(this)">
+            <table  align="center" cellspacing="15px" id="mytab">
+                <tr>
+                    <td><label>First Name: </label></td>
+                    <td><input type='text' required /></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name: </label></td>
+                    <td><input type='text'  /></td>
+                </tr>
+                <tr>
+                    <td><label >Objective:</label></td>
+                    <td><textarea rows="2" cols="150"></textarea></td>
+                </tr>
+                
+                <tr>
+                    <td><label><b>Educational Background</b></label></td>
+                    <td><input type="button" value="+" onclick="add_background()" /></td>
+                </tr>
+                <tr>
+                       <td colspan="4" >
+                           Name of Board:<input type="text" name="board" required/>
+                           Course:<input type="text" name="course" required/>
+                           CGPA:<input type="text" name="cgpa" required/>
+                           Year of Passing:<input type="text" name="yop" required/>
+                       </td>
+                </tr>
+                <tr>
+                        <td><label>Profesional Experience</label></td>
+                        <td><input type="button" value="+" onclick="add_experience()" /></td>
+                </tr>
+                <tr>
+                        <td colspan="3">
+                                Job Profile:<input type="text" name="profile" required/>
+                                Experience:<input type="text" name="experience" required/>
+                                Accomplishments:<input type="text" name="accomp" required/>
+                        </td>
+                </tr>
+                <tr>
+                    <td>Skills:</td>
+                </tr>
+                <tr>
+                            <td colspan="4">
+                            <input type="checkbox"  name="terms" value="C" />C 
+                            <input type="checkbox"  name="terms" value="python" /> Python  
+                            <input type ="checkbox"  name="terms" value="java" />Java  
+                            <input type="checkbox"  name="terms" value="php" /> PHP
+                            </td>  
+                </tr>
+                <tr colspan="2">
+                        <td><b>Projects</b>
+                            <input type="button" value="+" onclick="add_projets()" /></td>
+                </tr>
+                <tr>
+                        <td colspan="2">
+                                Project:<input type="text" name="project"/>
+                                Year:<input type="text" name="year"/>
+                        </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                            <input type="submit" value="Submit"/>
+                            <input type="reset" value="Reset" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
